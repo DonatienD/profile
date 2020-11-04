@@ -1,0 +1,64 @@
+body {
+  background-color: #EDEEC0;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #011627;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 1.9em;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 0.3em
+}
+
+h2 {
+  color: #758173;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4em;
+}
+ a {
+  color: #AD5D4E;
+  text-decoration: none;
+ }
+
+ a:hover {
+  opacity: 0.6;
+ }
+
+ .container {
+  width: 400px;
+  margin: 0 auto;
+ }
+
+.card {
+  text-align: center;
+  background-color: #FDFFFC;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 3px;
+  box-shadow: 2px 2px 7px rgba(1, 22, 39, 0.15);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  font-size: 1.2em
+}
+
+.list-inline {
+    list-style: none;
+    padding: 0;
+    font-size: 2em;
+}
+
+.list-inline > li {
+    display: inline;
+    padding: 0 10px
+}
+
+#img-circle {
+  border-radius: 3px;
+}
