@@ -3,49 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700&family=Italiana&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
-  <title>My Profile</title>
+  <title>Donatien Léon Ink</title>
 </head>
 <body>
- <div class="container">
-    <div class="card">
-      <h1>Hey there! I'm Donatien</h1>
-      <img class="img-circle" src="images/profile.jpg" alt="This is me!" width="300">
-      <h2>Web developer & Content Creator</h2>
-      <p>Curently doing Le Wagon Web Dev' bootcamp.
-      I'm into creation, design, photogrpahy, tech and sports (I know, that's a lot).
-      Oh and, yeah, I love food!</p>
+ <div class="container mx-auto">
+  <div class="hero-section w-100">
+    <h1 class="-mb-12">Donatien</h1>
+    <a href="#web-dev">
+      <h1 class="-mb-12 text-right transition duration-500 ease-in-out hover:opacity-60">Web Development</h1>
+    </a>
+    <a href="#photography">
+      <h1 class="text-right transition duration-500 ease-in-out hover:opacity-60">Photography</h1>
+    </a>
+  </div>
+
+  <div class="hidden sm:block w-10/12 mx-auto my-16" aria-hidden="true">
+      <div class="border-t border-black opacity-40"></div>
+  </div>
+
+  <div class="section relative">
+    <h3 class="my-8">About</h3>
+    <h5 class="absolute top-10 right-0">Me</h5>
+    <div class="text-section w-8/12">
+      <p class="about-text">
+        Hi ! I’m Donatien, Full-Stack developper and photographer, based in France.
+      </p>
+      <p class="about-text">
+        I work as a freelancer with agencies, start-ups and individuals.
+      </p>
+      <p class="about-text">
+        I’m currently open to work on exciting projects.
+      </p>
     </div>
-    <div class="card bg-red text-center">
-        <a class="btn" href="http://donatienleonphotographie.com"><strong>Discover my pictures</strong></a>
+  </div>
+
+ <div class="hidden sm:block w-10/12 mx-auto my-16" aria-hidden="true">
+      <div class="border-t border-black opacity-40"></div>
+  </div>
+
+  <div id="web-dev" class="section">
+    <h2 class="sticky bg-white bg-opacity-70 top-0 h-32 z-10">Web Development</h2>
+    <div class="description-text-section">
+      <p class="paragraph-header">
+        The one thing I like with web development ? The ability to bring ideas and visions to life.
+      </p>
+      <p>
+        As a full stack developper, I’m able to build whole projects, whether it’s an E-Commerce shop, a personal portfolio or an internal solution for a company.
+      </p>
+
+      <p class="paragraph-header">
+        I bring special attention to UI and UX, for two reasons :
+      </p>
+      <p>
+        First, it’s beauty that makes our hearts racing. <br>
+        Second, the best service is the one that « just works ».
+      </p>
+
+      <p class="paragraph-header">
+        Practicing Python since 2015, I’ve switched to web development in 2020 and attended Le Wagon intensive 9 weeks bootcamp (ranked #1 worldwide). <br>
+      <p>
+        What about the techs I use ? I deeply think that it’s not about what you know, but about what you do with what you know. So the only thing that matters is the result. If you want to know more, reach me out. 😉
+      </p>
     </div>
 
-    <div class="card text-center">
-      <h2>Find me elsewhere</h2>
-      <ul class="list-inline">
-        <li>
-          <a href="https://twitter.com/Donatien_Leon" target="_blank">
-            <i class="fab fa-twitter"></i>
+    <div class="projects relative">
+      <h3 class="my-8">Pro</h3>
+      <h5 class="absolute top-10 right-0">jects</h5>
+      <div class="project-cards w-8/12">
+        <div class="card flex my-6">
+          <img src="images/this_website.png" alt="Screenshot of the hero section of this website." width="300" height="200">
+          <div class="card-text ml-4">
+            <h4>My portfolio</h4>
+            <p>Hey ! Just take a step back and look at this website. As minimalist as it is, isn't it nice ? <br>
+            And you know what ? It's pure HTML and CSS. 'Cause, you know, less is more.</p>
+          </div>
+        </div>
+
+        <div class="card flex my-6">
+          <img src="images/golden_places.png" alt="Screenshot of Golden Places." width="300" height="200">
+          <div class="card-text ml-4">
+            <h4>Golden Places</h4>
+            <p>Golden Places is a booking service for luxury villas.<br>
+            I was in charge of the back-end part and did the design of the main page.</p>
+          </div>
+        </div>
+
+        <div class="card flex my-6">
+          <img src="images/rocket.png" alt="Screenshot of Rocket." width="300" height="200">
+          <div class="card-text ml-4">
+            <h4>Rocket</h4>
+            <p>Rocket is a learning tool that increases memorization efficiency through flashcards.<br>
+            It's a personnal project. I did the back-end development, and about half the front-end.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden sm:block w-10/12 mx-auto my-16" aria-hidden="true">
+    <div class="border-t border-black opacity-40"></div>
+  </div>
+
+  <div id="photography" class= "section">
+    <h2 class="sticky bg-white bg-opacity-70 top-0 h-32 z-10">Photography</h2>
+    <div class="description-text-section">
+      <p class="paragraph-header">
+        Photography is magical. It gives you the ability to fix moments and memories in time.
+      </p>
+      <p>
+        I have been into photography for about eight years now : portraits, events, landscapes, pack shots... <br>
+        I am pretty versatile, even though I have a fondness for Architecture.
+      </p>
+    </div>
+
+    <div class="projects relative">
+      <h3 class="my-8">Pro</h3>
+      <h5 class="absolute top-10 right-0">jects</h5>
+      <div class="project-cards w-8/12">
+        <div class="card flex my-6">
+          <a href="https://flic.kr/s/aHskQYXXPC" target="_blank">
+            <img src="images/apple_park.jpg" alt="Picture of the Apple Visitor Center." width="300" height="200">
           </a>
-        </li>
-        <li>
-          <a href="https://anchor.fm/donatienleon" target="_blank">
-            <i class="fas fa-microphone-alt"></i>
-          </a>
-        </li>
-        <li><a href="https://www.youtube.com/channel/UCVgZ4ZXHIbmQZDkrzzSou-w" target="_blank">
-          <i class="fab fa-youtube"></i>
+          <div class="card-text ml-4">
+            <h4>Apple Park</h4>
+            <p>Pictures of the Apple Visitor Center, in Cupertino, California, USA.</p>
+            <a href="https://flic.kr/s/aHskQYXXPC" target="_blank">
+              <p class="opacity-60 hover:opacity-80 mt-3">Click here for more</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="folio mt-12">
+      <h3 class="my-8">Folio</h3>
+      <div class="mx-auto grid grid-cols-3 gap-10">
+        <div class="flex justify-center">
+          <img class="block" src="images/architecture1.jpg" alt="Architecture picture">
+        </div>
+        <div class="flex justify-center">
+          <img src="images/architecture3.jpg" alt="Architecture picture">
+        </div>
+        <div class="flex justify-center">
+          <img src="images/architecture4.jpg" alt="Architecture picture">
+        </div>
+        <div class="flex justify-center">
+          <img src="images/geometry1.jpg" alt="Geometry picture">
+        </div>
+        <div class="flex justify-center">
+          <img src="images/architecture2.jpg" alt="Architecture picture">
+        </div>
+        <div class="flex justify-center">
+          <img src="images/portrait1.jpg" alt="Portrait picture">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden sm:block w-10/12 mx-auto my-16" aria-hidden="true">
+    <div class="border-t border-black opacity-40"></div>
+  </div>
+
+  <div class= "section">
+    <h2 class="sticky bg-white bg-opacity-70 top-0 h-32 z-10">Contact</h2>
+    <ul>
+      <li>
+        <a href="mailto:ink@donatienleon.com">
+          <h1 class="-mb-12 transition duration-500 ease-in-out hover:opacity-60">Email</h1>
         </a>
       </li>
-        <li>
-          <a href="https://github.com/DonatienD" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+      <li>
+        <a href="https://www.linkedin.com/in/donatien-d" target="_blank">
+          <h1 class="-mb-12 transition duration-500 ease-in-out hover:opacity-60">LinkedIn</h1>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/donatienleon_ink/" target="_blank">
+          <h1 class="transition duration-500 ease-in-out hover:opacity-60">Instagram</h1>
+        </a>
+      </li>
+    </ul>
   </div>
 </body>
 </html>
