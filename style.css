@@ -81,7 +81,12 @@ h5 {
 .paragraph-header {
   font-weight: 500;
   margin: 0.7rem 0 0 0;
-  }
+}
+
+#web-dev img {
+  width: 300px;
+  height: 180px;
+}
 
 .project-cards {
   padding: 0 3rem;
@@ -91,4 +96,14 @@ h5 {
   font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 300;
+}
+
+.landscape-picture {
+  width: 400px;
+  height: 300px;
+}
+
+.portrait-picture {
+  width: 400px;
+  height: 600px;
 }
