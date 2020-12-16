@@ -365,5 +365,10 @@ h5 {
     line-height: 1;
     text-align: center;
   }
+
+  #web-dev img {
+    width: 265px;
+    height: 160px;
+  }
 }
 
