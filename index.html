@@ -17,23 +17,23 @@
 <body>
  <div class="container mx-auto">
   <div class="mt-20 hero-section w-100">
-    <h1 class="-mb-12">Donatien</h1>
+    <h1 class="-mb-1 sm:-mb-4 md:-mb-8 lg:-mb-12">Donatien</h1>
     <a href="#web-dev">
-      <h1 class="-mb-12 text-right transition duration-500 ease-in-out hover:opacity-60">Web Development</h1>
+      <h1 class="-mb-1 sm:-mb-4 md:-mb-8 lg:-mb-12 text-right transition duration-500 ease-in-out hover:opacity-60 whitespace-nowrap">Web Development</h1>
     </a>
     <a href="#photography">
       <h1 class="text-right transition duration-500 ease-in-out hover:opacity-60">Photography</h1>
     </a>
   </div>
 
-  <div class="hidden sm:block w-10/12 mx-auto my-16" aria-hidden="true">
+  <div class="sm:block w-10/12 divider" aria-hidden="true">
       <div class="border-t border-black opacity-40"></div>
   </div>
 
   <div class="section relative">
     <h3 class="my-8">About</h3>
     <h5 class="absolute top-10 right-0">Me</h5>
-    <div class="text-section w-8/12">
+    <div class="text-section md:w-8/12">
       <p class="about-text">
         Hi ! I’m Donatien, Full-Stack developper and photographer, based in France.
       </p>
@@ -46,12 +46,12 @@
     </div>
   </div>
 
- <div class="hidden sm:block w-10/12 mx-auto my-16" aria-hidden="true">
+ <div class="sm:block w-10/12 divider" aria-hidden="true">
       <div class="border-t border-black opacity-40"></div>
   </div>
 
   <div id="web-dev" class="section">
-    <h2 class="sticky bg-white bg-opacity-70 top-0 h-32 z-10">Web Development</h2>
+    <h2 class="sticky text-center md:text-left bg-white bg-opacity-70 top-0 py-5 md:px-3 z-10">Web Development</h2>
     <div class="description-text-section">
       <p class="paragraph-header">
         The one thing I like with web development ? The ability to bring ideas and visions to life.
@@ -76,11 +76,16 @@
     </div>
 
     <div class="projects relative">
-      <h3 class="my-8">Pro</h3>
-      <h5 class="absolute top-10 right-0">jects</h5>
-      <div class="project-cards w-8/12">
-        <div class="card flex my-6">
-          <img src="images/this_website.png" alt="Screenshot of the hero section of this website.">
+      <div class="hidden md:block">
+        <h3 class="my-8">Pro</h3>
+        <h5 class="absolute top-10 right-0">jects</h5>
+      </div>
+      <div class="block md:hidden">
+        <h3 class="my-8">Projects</h3>
+      </div>
+      <div class="project-cards w-full lg:w-9/12 xl:w-8/12">
+        <div class="card flex flex-wrap md:flex-nowrap my-6">
+          <img class="mb-5 md:m-0" src="images/this_website.png" alt="Screenshot of the hero section of this website.">
           <div class="card-text ml-4">
             <h4>My portfolio</h4>
             <p>Hey ! Just take a step back and look at this website. As minimalist as it is, isn't it nice ? <br>
@@ -88,8 +93,8 @@
           </div>
         </div>
 
-        <div class="card flex my-6">
-          <img src="images/golden_places.png" alt="Screenshot of Golden Places." width="300" height="200">
+        <div class="card flex flex-wrap md:flex-nowrap my-8 xl:my-6">
+          <img class="mb-5 md:m-0" src="images/golden_places.png" alt="Screenshot of Golden Places.">
           <div class="card-text ml-4">
             <h4>Golden Places</h4>
             <p>Golden Places is a booking service for luxury villas.<br>
@@ -97,8 +102,8 @@
           </div>
         </div>
 
-        <div class="card flex my-6">
-          <img src="images/rocket.png" alt="Screenshot of Rocket." width="300" height="200">
+        <div class="card flex flex-wrap md:flex-nowrap my-6">
+          <img class="mb-5 md:m-0" src="images/rocket.png" alt="Screenshot of Rocket.">
           <div class="card-text ml-4">
             <h4>Rocket</h4>
             <p>Rocket is a learning tool that increases memorization efficiency through flashcards.<br>
@@ -109,12 +114,12 @@
     </div>
   </div>
 
-  <div class="hidden sm:block w-10/12 mx-auto my-16" aria-hidden="true">
+  <div class="sm:block w-10/12 divider" aria-hidden="true">
     <div class="border-t border-black opacity-40"></div>
   </div>
 
   <div id="photography" class= "section">
-    <h2 class="sticky bg-white bg-opacity-70 top-0 h-32 z-10">Photography</h2>
+    <h2 class="sticky text-center md:text-left bg-white bg-opacity-70 top-0 py-5 md:px-3 z-10">Photography</h2>
     <div class="description-text-section">
       <p class="paragraph-header">
         Photography is magical. It gives you the ability to fix moments and memories in time.
@@ -126,14 +131,21 @@
     </div>
 
     <div class="projects relative">
-      <h3 class="my-8">Pro</h3>
-      <h5 class="absolute top-10 right-0">jects</h5>
-      <div class="project-cards w-8/12">
-        <div class="card flex my-6">
-          <a href="https://flic.kr/s/aHskQYXXPC" target="_blank">
-            <img src="images/apple_park.jpg" alt="Picture of the Apple Visitor Center." width="300" height="200">
-          </a>
-          <div class="card-text ml-4">
+      <div class="hidden md:block">
+        <h3 class="my-8">Pro</h3>
+        <h5 class="absolute top-10 right-0">jects</h5>
+      </div>
+      <div class="block md:hidden">
+        <h3 class="my-8">Projects</h3>
+      </div>
+      <div class="project-cards lg:w-9/12 xl:w-8/12">
+        <div class="card flex flex-wrap md:flex-nowrap my-6">
+          <div class="flex-grow">
+            <a href="https://flic.kr/s/aHskQYXXPC" target="_blank">
+              <img class="mb-5 md:m-0" src="images/apple_park.jpg" alt="Picture of the Apple Visitor Center.">
+            </a>
+          </div>
+          <div class="card-text ml-6 lg:ml-4 flex-grow-0">
             <h4>Apple Park</h4>
             <p>Pictures of the Apple Visitor Center, in Cupertino, California, USA.</p>
             <a href="https://flic.kr/s/aHskQYXXPC" target="_blank">
@@ -146,7 +158,7 @@
 
     <div class="folio mt-12">
       <h3 class="my-8">Folio</h3>
-      <div class="mx-auto grid grid-cols-3 gap-10">
+      <div class="mx-auto grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
         <div class="flex justify-center">
           <img class="landscape-picture" src="images/architecture1.jpg" alt="Architecture picture">
         </div>
@@ -154,10 +166,10 @@
           <img class="landscape-picture" src="images/architecture3.jpg" alt="Architecture picture">
         </div>
         <div class="flex justify-center box-content">
-          <img class="landscape-picture" src="images/architecture4.jpg" alt="Architecture picture">
+          <img class="landscape-picture hidden sm:block" src="images/architecture4.jpg" alt="Architecture picture">
         </div>
         <div class="flex justify-center">
-          <img class="portrait-picture" src="images/geometry1.jpg" alt="Geometry picture">
+          <img class="portrait-picture hidden sm:block" src="images/geometry1.jpg" alt="Geometry picture">
         </div>
         <div class="flex justify-center">
           <img class="portrait-picture" src="images/architecture2.jpg" alt="Architecture picture">
@@ -166,29 +178,32 @@
           <img class="portrait-picture" src="images/portrait1.jpg" alt="Portrait picture">
         </div>
       </div>
+      <div class="block sm:hidden description-text-section text-center">
+        <p class="font-extralight italic opacity-80">See more on desktop</p>
+      </div>
     </div>
   </div>
 
-  <div class="hidden sm:block w-10/12 mx-auto my-16" aria-hidden="true">
+  <div class="sm:block w-10/12 divider" aria-hidden="true">
     <div class="border-t border-black opacity-40"></div>
   </div>
 
   <div class= "section">
-    <h2 class="sticky bg-white bg-opacity-70 top-0 h-32 z-10">Contact</h2>
+    <h2 class="sticky bg-white bg-opacity-70 top-0 py-5 z-10">Contact</h2>
     <ul>
       <li>
         <a href="mailto:ink@donatienleon.com">
-          <h1 class="-mb-12 transition duration-500 ease-in-out hover:opacity-60">Email</h1>
+          <h1 class="-mb-1 sm:-mb-4 md:-mb-8 lg:-mb-12 transition duration-500 ease-in-out hover:opacity-60">Email</h1>
         </a>
       </li>
       <li>
         <a href="https://www.linkedin.com/in/donatien-d" target="_blank">
-          <h1 class="-mb-12 transition duration-500 ease-in-out hover:opacity-60">LinkedIn</h1>
+          <h1 class="-mb-1 sm:-mb-4 md:-mb-8 lg:-mb-12 transition duration-500 ease-in-out hover:opacity-60">LinkedIn</h1>
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/donatienleon_ink/" target="_blank">
-          <h1 class="mb-12 transition duration-500 ease-in-out hover:opacity-60">Instagram</h1>
+          <h1 class="mb-3 transition duration-500 ease-in-out hover:opacity-60">Instagram</h1>
         </a>
       </li>
     </ul>

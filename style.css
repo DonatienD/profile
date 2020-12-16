@@ -1,22 +1,3 @@
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 800px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 340px;
-  }
-}
-
 body {
   font-family: 'Arima Madurai', cursive;
   color: #000;
@@ -98,6 +79,10 @@ h5 {
   font-weight: 300;
 }
 
+.divider {
+  margin: 4rem auto;
+}
+
 .landscape-picture {
   width: 400px;
   height: 300px;
@@ -107,3 +92,273 @@ h5 {
   width: 400px;
   height: 600px;
 }
+
+@media (max-width: 1280px) {
+  /* For a screen < 1024px, this CSS will be read */
+  .container {
+    width: 1000px;
+  }
+
+  h1 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: 'Italiana', serif;
+    font-size: 7rem;
+    line-height: 1;
+    margin: 2rem 0;
+  }
+
+  h4 {
+    font-family: 'Italiana', serif;
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+  }
+
+  h5 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 10rem;
+    line-height: 1;
+    opacity: 0.3;
+  }
+
+  .card {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+
+  .landscape-picture {
+    width: 300px;
+    height: 225px;
+  }
+
+  .portrait-picture {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* For a screen < 1024px, this CSS will be read */
+  .container {
+    width: 900px;
+  }
+
+  h1 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: 'Italiana', serif;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 2rem 0;
+  }
+
+  h4 {
+    margin-bottom: 0.8rem;
+  }
+
+  h5 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 9rem;
+    line-height: 1;
+    opacity: 0.05;
+  }
+
+  .about-text {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+  }
+
+  .divider {
+    margin: 3rem auto;
+  }
+
+  .landscape-picture {
+    width: 250px;
+    height: 187.5px;
+  }
+
+  .portrait-picture {
+    width: 250px;
+    height: 375px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* For a screen < 768px, this CSS will be read */
+  .container {
+    width: 630px;
+  }
+
+  h1 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: 'Italiana', serif;
+    font-size: 5rem;
+    line-height: 1;
+    margin: 2rem 0;
+  }
+
+  h3 {
+    font-family: 'Italiana', serif;
+    font-size: 4rem;
+    line-height: 1;
+    text-align: center;
+  }
+
+  h5 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 10rem;
+    line-height: 1;
+    opacity: 0.05;
+  }
+
+  #web-dev img {
+    width: auto;
+    height: auto;
+  }
+
+  .landscape-picture {
+    width: 190px;
+    height: 142.5px;
+  }
+
+  .portrait-picture {
+    width: 190px;
+    height: 285px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 490px;
+  }
+
+  h1 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: 'Italiana', serif;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 2rem 0;
+  }
+
+  h3 {
+    font-family: 'Italiana', serif;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .description-text-section {
+    padding: 0 3rem;
+    font-size: 1rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+    margin: 0.5rem 0 4rem 0;
+  }
+
+  .landscape-picture {
+    width: 210px;
+    height: 157.5px;
+  }
+
+  .portrait-picture {
+    width: 210px;
+    height: 315px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 370px;
+  }
+
+  h1 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: 'Italiana', serif;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 2rem 0;
+  }
+
+  .landscape-picture {
+    width: 170px;
+    height: 127.5px;
+  }
+
+  .portrait-picture {
+    width: 170px;
+    height: 255px;
+  }
+
+  .card {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 375px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 360px;
+  }
+
+  h1 {
+    font-family: 'Italiana', serif;
+    padding-bottom: 0.3em;
+    font-size: 2.8rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: 'Italiana', serif;
+    font-size: 2.7rem;
+    line-height: 1;
+    margin: 2rem 0;
+  }
+
+  h3 {
+    font-family: 'Italiana', serif;
+    font-size: 2.7rem;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
